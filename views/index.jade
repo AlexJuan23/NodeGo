@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Welcome to NodeGo. A two player implementation of the classic board game GO!
+  p Just log in to keep playing. don't have an account? just log in with your credentials and we'll make an account for you!  
+  #login    
+    fieldset
+      input#inputUserName(type="text", placeholder="username", name="username")
+      input#inputUserPassword(type="text", placeholder="password", name="userpassword")
+      button#btnLogin(type="submit") Login
+  script(src ='/javascripts/jquery.min.js')
+  script(src="/javascripts/login.js")

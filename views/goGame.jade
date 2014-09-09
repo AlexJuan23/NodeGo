@@ -1,0 +1,19 @@
+extends layout
+
+block content 
+    canvas#board(width='1000', height='1000')  
+    #wrapper
+      | Black Captured
+      br
+      input#blackcaptured(input='input', type='text', name='blackcaptured', readonly='readonly')
+      br
+      | White Captured
+      br
+      input#whitecaptured(input='input', type='text', name='whitecaptured', readonly='readonly')
+      br
+      button#reset Reset
+      button#save Save
+      button#logout logout
+      link(rel='stylesheet', href='/stylesheets/stylesheet.css')
+      script(src ='/javascripts/jquery.min.js')
+      script(src='/javascripts/game.js')
